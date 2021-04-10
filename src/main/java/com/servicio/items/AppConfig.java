@@ -1,5 +1,6 @@
 package com.servicio.items;
 
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
@@ -14,11 +15,13 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class AppConfig {
 
   /**
-   * Cliente http para poder acceder a recursos que estan en otros microservicios
+   * Cliente http para poder acceder a recursos que estan en otros microservicios LoadBalanced:
+   * utiliza ribbon para el balanceo de carga
    *
    * @return
    */
   @Bean("clienteRest")
+  @LoadBalanced
   public RestTemplate registarRestTemplate() {
     return new RestTemplate();
   }

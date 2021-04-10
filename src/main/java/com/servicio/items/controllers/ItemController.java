@@ -13,7 +13,7 @@ import com.servicio.items.models.service.ItemService;
 public class ItemController {
   /** Qualifier es para indicar que implementacion usar */
   @Autowired
-  @Qualifier("serviceFeign")
+  @Qualifier("serviceRestTemplate")
   private ItemService itemService;
 
   @GetMapping("/listar")
