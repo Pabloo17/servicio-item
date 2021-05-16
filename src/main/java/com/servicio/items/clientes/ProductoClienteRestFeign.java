@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import com.servicio.items.models.Producto;
+import com.servicio.commons.models.entity.Producto;
 
 /**
  * Nombre del servicio al que nos queremos conectar y su url

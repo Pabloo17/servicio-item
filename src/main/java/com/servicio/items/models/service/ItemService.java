@@ -1,8 +1,8 @@
 package com.servicio.items.models.service;
 
 import java.util.List;
+import com.servicio.commons.models.entity.Producto;
 import com.servicio.items.models.Item;
-import com.servicio.items.models.Producto;
 
 public interface ItemService {
 

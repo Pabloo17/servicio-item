@@ -1,5 +1,6 @@
 package com.servicio.items.models;
 
+import com.servicio.commons.models.entity.Producto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

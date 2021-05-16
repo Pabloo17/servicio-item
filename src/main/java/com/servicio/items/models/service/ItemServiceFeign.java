@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import com.servicio.commons.models.entity.Producto;
 import com.servicio.items.clientes.ProductoClienteRestFeign;
 import com.servicio.items.models.Item;
-import com.servicio.items.models.Producto;
 
 @Service("serviceFeign")
 public class ItemServiceFeign implements ItemService {
