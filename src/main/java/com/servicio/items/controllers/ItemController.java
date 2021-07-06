@@ -6,6 +6,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,6 +23,8 @@ import com.servicio.items.models.Item;
 import com.servicio.items.models.service.ItemService;
 import lombok.extern.slf4j.Slf4j;
 
+// permite actualizar los componentes que estamos inyectando con value configuraciones y environment
+@RefreshScope
 @Slf4j
 @RestController
 public class ItemController {
